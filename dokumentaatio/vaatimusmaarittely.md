@@ -2,7 +2,8 @@
 
 ## Sovelluksen tarkoitus
 
-Sovelluksen avulla on  
+Retropeli ja laite kokoelman kortisto/hallintajärjestelmä.
+Sovelluksen avulla on mahdollista ylläpitää omaa tietokone/konsoli/pelikokoelmaa 
 
 ## Käyttäjät
 
@@ -12,9 +13,8 @@ Ainakin aluksi vain yksi käyttäjärooli
 
 - Tekstikäyttöliittymä
 
-- Tekstikäyttöliittymän rajoituksista 
+- Tallennus tiedostoon
 
-- XXXXXX
 
 ### Kirjautumaton käyttäjä
 
@@ -24,17 +24,20 @@ Ainakin aluksi vain yksi käyttäjärooli
 
 ### Kirjautumisen jälkeen
 
-- Käyttäjä näkee edistymisensä
+- Ohjelma tarjoaa erilaisia valmiiksi luotuja kategorioita ja alakategorioita joihin kokoelman osat jaotellaan
 
-- XXXXX
+- Käyttäjä pääsee tarkastelemaan omaa kokoelmaansa ja tekemään siihen lisäyksiä, poistoja ja muita muutoksia valmiiksi luotujen kategorioiden puitteissa
 
-- Käyttäjä voi testata osaamistaan jolloin eteneminen tallennetaan
-
+ 
 ## Mahdolliset myöhemmät toiminnallisuudet
 
-- Graafinen käyttöliittymä
+- Graafinen käyttöliittymä, todennäköisesti mukana lähes alusta lähtien
 
+- Tiedon tallennus tietokantaan
 
-- XXXXXX
+- Käyttäjän mahdollisuus lisätä erilaisia kokoelmaan liittyviä kategorioita ja alakategorioita joihin tuotteet voi lajitella
+
+- Kuvien lisäämisen mahdollisuus
+
 
 
