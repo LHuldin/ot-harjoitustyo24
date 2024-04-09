@@ -6,3 +6,4 @@
 
 [tuntikirjanpito](https://github.com/LHuldin/ot-harjoitustyo24/blob/main/sovellus/dokumentaatio/tuntikirjanpito.md)
 
+[changelog](https://github.com/LHuldin/ot-harjoitustyo24/blob/main/sovellus/dokumentaatio/changelog.md)
