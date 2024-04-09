@@ -1,3 +1,4 @@
+```mermaid
 sequenceDiagram
     participant main
     participant laitehallinto
@@ -6,3 +7,17 @@ sequenceDiagram
     participant bussi244
     participant lippuluukku
     participant kallen_kortti
+
+    main->>laitehallinto: HKLLaitehallinto(laitehallinto)
+    main->>rautatietori: Lataajalaite(rautatietori)
+    main->>ratikka6: Lukijalaite(ratikka6)
+    main->>bussi244: Lukijalaite(bussi244)
+
+    main->>laitehallinto: lisaa_lataaja(rautatietori)
+    main->>laitehallinto: lisaa_lukija(ratikka6)
+    main->>laitehallinto: lisaa_lukija(bussi244)
+
+    main->>lippu_luukku: Kioski(lippu_luukku)
+
+
+```
