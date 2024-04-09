@@ -10,13 +10,27 @@
     Ruutu <|-- Vankila
     Vankila <|-- Monopolipeli : sijainti
     Ruutu <|-- Sattuma
+    Sattuma <|-- Kortti
     Ruutu <|-- Yhteismaa
+    Yhteismaa <|-- Kortti
     Ruutu <|-- Asema
     Ruutu <|-- Laitokset
     Ruutu <|-- Katu
     Katu "1" -- "0..4" Talo
     Katu "1" -- "0..1" Hotelli
+    Katu <|-- Pelaaja : omistaja
     Pelinappula "1" -- "1" Pelaaja
     Pelaaja "2..8" -- "1" Monopolipeli
-    
+    class Pelaaja{
+        rahan määrä
+    }
+    class Kortti{
+        toiminto
+    }
+    class Ruutu{
+        toiminto
+    }
+    class Katu{
+        nimi
+    }
 ```
