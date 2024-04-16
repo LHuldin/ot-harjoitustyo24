@@ -1,9 +1,10 @@
 from login import Login
 from register import Register
 
+
 class UI:
     def __init__(self):
-    
+
         self.login = Login()
         self.register = Register()
 

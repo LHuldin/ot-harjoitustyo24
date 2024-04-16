@@ -1,6 +1,7 @@
 import unittest
 from register import Register
 
+
 class TestRegister(unittest.TestCase):
     def setUp(self):
         print("Set up goes here")

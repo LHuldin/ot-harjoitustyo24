@@ -2,8 +2,10 @@ class Register:
     def __init__(self):
         self.username = None
         self.password = None
+
     def register(self):
-        self.username = input("Valitse vähintään 4 merkkiä pitkä käyttäjätunnus: ")
+        self.username = input(
+            "Valitse vähintään 4 merkkiä pitkä käyttäjätunnus: ")
         self.password = input("Valitse vähintään 4 merkkiä pitkä salasana: ")
         Register.write_file(self.username, self.password)
 
