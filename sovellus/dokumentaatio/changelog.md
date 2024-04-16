@@ -11,4 +11,6 @@
 - testi invoket toteutettu
 - pylint otettu käyttöön
 - autopep8 otettu käyttöön
+- library_ui luokka lisätty
+- Yksinkertainen tiedon tallennus oinnistuu libarary_ui luokkan kautta kovakoodattuun csv tiedostoon
   
