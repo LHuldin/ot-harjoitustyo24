@@ -7,20 +7,20 @@ Sovelluksen avulla on mahdollista ylläpitää omaa tietokone/konsoli/pelikokoel
 
 ## Käyttäjät
 
-Ainakin aluksi vain yksi käyttäjärooli.
+Ainakin aluksi vain yksi käyttäjärooli. 
 
 ## Perusversion toiminnallisuus
 
-- Tekstikäyttöliittymä.
+- Tekstikäyttöliittymä.   tehty
 
 - Tallennus tiedostoon.
 
 
 ### Kirjautumaton käyttäjä
 
-- Voi luoda käyttäjätunnuksen ja salasanan.
+- Voi luoda käyttäjätunnuksen ja salasanan.                            tehty
 
-- Käyttäjätunnuksen ja salasanan luotuaan voi kirjautua ohjelmaan. 
+- Käyttäjätunnuksen ja salasanan luotuaan voi kirjautua ohjelmaan.     tehty
 
 ### Kirjautumisen jälkeen
 
