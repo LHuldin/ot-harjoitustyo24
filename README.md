@@ -1,6 +1,6 @@
 # Ohjelmistotekniikka, harjoitustyö
 
-### Retro kokoelma sovellus
+## Retro kokoelma sovellus
 
 
 
