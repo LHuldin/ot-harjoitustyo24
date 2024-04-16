@@ -1,5 +1,9 @@
 # Ohjelmistotekniikka, harjoitustyö
 
+### Retro kokoelma sovellus
+
+
+
 ### Dokumentaatio
 
 [vaatimusmäärittely](https://github.com/LHuldin/ot-harjoitustyo24/blob/main/sovellus/dokumentaatio/vaatimusmaarittely.md)
