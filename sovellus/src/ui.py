@@ -1,5 +1,6 @@
 from login import Login
 from register import Register
+from library_ui import LibraryUI
 
 
 class UI:
@@ -7,6 +8,7 @@ class UI:
 
         self.login = Login()
         self.register = Register()
+        self.library_ui = LibraryUI()
 
     def ui(self):
 
@@ -15,6 +17,7 @@ class UI:
             choice = input("Valitse toiminto (1-3): ")
             if choice == "1":
                 self.login.login()
+                self.library_ui.run()
             elif choice == "2":
                 self.register.register()
             elif choice == "3":
