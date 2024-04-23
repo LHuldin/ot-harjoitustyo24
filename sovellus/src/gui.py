@@ -1,7 +1,8 @@
 import tkinter as tk
-from tkinter import ttk, Canvas, PhotoImage, NW
+from tkinter import ttk, Canvas, PhotoImage, NW, messagebox
 from user_db_manager import add_user, fetch_user
 from library_db_manager import add_item, fetch_items
+import library_gui 
 
 class GUI:
     def __init__(self, root):
@@ -42,9 +43,11 @@ class GUI:
         password = self.password_entry.get()
         user = fetch_user(username)
         if user and user['password'] == password:
-            print("Kirjautuminen onnistui")
+            messagebox.showinfo("Hyvä", "kirjautuminen onnistui!")
+            self._root.destroy()  
+            library_gui.launch_library_gui()
         else:
-            print("Virheellinen käyttäjänimi tai salasana")
+            messagebox.showerror("Voi voi!", "Kirjautuminen ei onnistunut.")
 
 
     def open_register_window(self):
@@ -69,9 +72,9 @@ class GUI:
     
     def register(self, username, password):
         if add_user(username, password):
-            print("Rekisteröinti onnistui")
+            messagebox.showinfo("hyvä", "Rekisteröinti onnistui")
         else:
-            print("Käyttäjänimi on jo käytössä")
+            messagebox.showinfo("Voi voi!", "Käyttäjänimi on jo käytössä")
 
     def open_picture_window(self):
         picture_window = tk.Toplevel(self._root)

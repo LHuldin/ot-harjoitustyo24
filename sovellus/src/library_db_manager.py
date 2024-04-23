@@ -11,3 +11,9 @@ def fetch_items():
     cursor = connection.cursor()
     cursor.execute("SELECT * FROM library")
     return cursor.fetchall()
+
+def remove_item(item_id):
+    connection = get_database_connection()
+    cursor = connection.cursor()
+    cursor.execute("DELETE FROM library WHERE id = ?", (item_id))
+    connection.commit()
