@@ -13,4 +13,8 @@
 - autopep8 otettu käyttöön
 - library_ui luokka lisätty
 - Yksinkertainen tiedon tallennus oinnistuu libarary_ui luokkan kautta kovakoodattuun csv tiedostoon
+
+## Viikko 5
+- Graafisen käyttöliittymän lisäys
+- Tiedon tallennuksen siirto sqlite tietokantaan
   
