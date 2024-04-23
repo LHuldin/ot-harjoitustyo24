@@ -5,9 +5,13 @@ def drop_tables(connection):
     cursor = connection.cursor()
 
     cursor.execute('''
-        drop table if exists users;
-        drop table if exists library;
+        DROP TABLE IF EXISTS users;
     ''')
+    
+    cursor.execute('''
+        DROP TABLE IF EXISTS library;
+    ''') 
+
 
     connection.commit()
 
@@ -16,16 +20,19 @@ def create_tables(connection):
     cursor = connection.cursor()
 
     cursor.execute('''
-        create table users (
+        CREATE TABLE users (
             id INTEGER PRIMARY KEY,
             username TEXT UNIQUE,
             password TEXT
         );
-        create table library
+    ''')
+
+    cursor.execute('''
+        CREATE TABLE library (
             id INTEGER PRIMARY KEY,
-            type text,
-            model text,
-            manufacturer text
+            type TEXT,
+            model TEXT,
+            manufacturer TEXT
         );
     ''')
 

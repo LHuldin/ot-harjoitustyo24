@@ -1,5 +1,7 @@
 import tkinter as tk
 from tkinter import ttk, Canvas, PhotoImage, NW
+from user_db_manager import add_user, fetch_user
+from library_db_manager import add_item, fetch_items
 
 class GUI:
     def __init__(self, root):
@@ -10,28 +12,39 @@ class GUI:
         heading_label = ttk.Label(master=self._root, text="Kirjaudu")
 
         username_label = ttk.Label(master=self._root, text="Käyttäjänimi")
-        username_entry = ttk.Entry(master=self._root)
+        self.username_entry = ttk.Entry(master=self._root)
+        #username_entry = ttk.Entry(master=self._root)
 
         password_label = ttk.Label(master=self._root, text="Salasana")
-        password_entry = ttk.Entry(master=self._root)
+        self.password_entry = ttk.Entry(master=self._root)
+        #password_entry = ttk.Entry(master=self._root)
 
-        button = ttk.Button(master=self._root, text="Kirjaudu sisään")
+        button = ttk.Button(master=self._root, text="Kirjaudu sisään", command=self.login)
         button2 = ttk.Button(master=self._root, text="Siirry tästä rekisteröitymään", command=self.open_register_window)
         button3 = ttk.Button(master=self._root, text="Katso kuva", command=self.open_picture_window)
 
         heading_label.grid(row=0, column=0, columnspan=2)
 
         username_label.grid(row=1, column=0)
-        username_entry.grid(row=1, column=1)
+        self.username_entry.grid(row=1, column=1)
 
         password_label.grid(row=2, column=0)
-        password_entry.grid(row=2, column=1)
+        self.password_entry.grid(row=2, column=1)
 
         button.grid(row=3, column=0, columnspan=2)
         
         button2.grid(row=4, column=0, columnspan=2)
 
         button3.grid(row=5, column=0, columnspan=2)
+
+    def login(self):
+        username = self.username_entry.get()
+        password = self.password_entry.get()
+        user = fetch_user(username)
+        if user and user['password'] == password:
+            print("Kirjautuminen onnistui")
+        else:
+            print("Virheellinen käyttäjänimi tai salasana")
 
 
     def open_register_window(self):
@@ -51,8 +64,14 @@ class GUI:
         password_label.grid(row=2, column=0)
         password_entry.grid(row=2, column=1)
 
-        register_button = ttk.Button(register_window, text="Rekisteröidy")
+        register_button = ttk.Button(register_window, text="Rekisteröidy", command=lambda: self.register(username_entry.get(), password_entry.get()))
         register_button.grid(row=3, column=0, columnspan=2)
+    
+    def register(self, username, password):
+        if add_user(username, password):
+            print("Rekisteröinti onnistui")
+        else:
+            print("Käyttäjänimi on jo käytössä")
 
     def open_picture_window(self):
         picture_window = tk.Toplevel(self._root)
