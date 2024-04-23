@@ -8,4 +8,6 @@
 | 15.4. | 6    | loput viikolta 3 jääneet (testit ja invoke) vaatimukset lisätty sovellukseen |
 | 16.4. | 2    | pylint ja autopep8 lisätty |
 | 16.4. | 5    | sovelluksen muokkaus ja toimintojen lisäys |
-| yht   | 19  | | 
+| 19.4. | 3    | graafisen käyttöliittymän suunnittelu |
+| 20.4. | 3    | graafisen käyttöliittymän ja tietokanta yhteyden suunnittelu ja koodaus |
+| yht   | 25  | | 
