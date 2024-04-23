@@ -10,4 +10,7 @@
 | 16.4. | 5    | sovelluksen muokkaus ja toimintojen lisäys |
 | 19.4. | 3    | graafisen käyttöliittymän suunnittelu |
 | 20.4. | 3    | graafisen käyttöliittymän ja tietokanta yhteyden suunnittelu ja koodaus |
-| yht   | 25  | | 
+| 22.4. | 3    | graafisen käyttöliittymän ja tietokanta yhteyden suunnittelu ja koodaus |
+| 23.4. | 4    | graafisen käyttöliittymän ja tietokanta yhteyden suunnittelu ja koodaus |
+| 23.4. | 2    | Sovelluksen toiminnan korjaus ja järkeistäminen |
+| yht   | 34  | | 
