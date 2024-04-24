@@ -2,6 +2,7 @@
 
 ## Retro kokoelma sovellus
 
+[Release viikko 5](https://github.com/LHuldin/ot-harjoitustyo24/releases/tag/viikko5)
 
 
 ### Dokumentaatio
