@@ -18,3 +18,6 @@
 - Graafisen käyttöliittymän lisäys
 - Tiedon tallennuksen siirto sqlite tietokantaan
   
+## Viikko 6
+- tekstikäyttöliittymän poisto
+- tiedostoon tallennuksen viittausten ja tiedostojen poisto
