@@ -24,7 +24,13 @@
 poetry install
 ```
 
-2. Sovelluksen käynnistys komennolla:
+2. Asenna sovelluksen SQLite tietokanta komennolla:
+
+```bash
+poetry run invoke build
+```
+
+3. Sovelluksen käynnistys komennolla:
 
 ```bash
 poetry run invoke start
