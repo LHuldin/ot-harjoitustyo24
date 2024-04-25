@@ -5,16 +5,19 @@ def add_user(username, password):
     if not user_exists(username):
         connection = get_database_connection()
         cursor = connection.cursor()
-        cursor.execute("INSERT INTO users (username, password) VALUES (?, ?)", (username, password))
+        cursor.execute(
+            "INSERT INTO users (username, password) VALUES (?, ?)", (username, password))
         connection.commit()
         return True
     return False
+
 
 def fetch_user(username):
     connection = get_database_connection()
     cursor = connection.cursor()
     cursor.execute("SELECT * FROM users WHERE username = ?", (username,))
     return cursor.fetchone()
+
 
 def user_exists(username):
     connection = get_database_connection()
