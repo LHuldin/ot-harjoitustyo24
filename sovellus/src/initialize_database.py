@@ -7,11 +7,10 @@ def drop_tables(connection):
     cursor.execute('''
         DROP TABLE IF EXISTS users;
     ''')
-    
+
     cursor.execute('''
         DROP TABLE IF EXISTS library;
-    ''') 
-
+    ''')
 
     connection.commit()
 
