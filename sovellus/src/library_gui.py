@@ -35,7 +35,7 @@ def launch_library_gui():
                 tk.END, f'ID: {item[0]}, Tyyppi: {item[1]}, Malli: {item[2]}, Valmistaja: {item[3]}')
 
     root = tk.Tk()
-    root.title("Library Management")
+    root.title("Kirjaston hallinta")
 
     tk.Label(root, text="Tyyppi").grid(row=0, column=0)
     entry_type = tk.Entry(root)

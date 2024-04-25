@@ -57,7 +57,7 @@ class GUI:
         register_window.title("Rekisteröidy")
 
         register_heading_label = ttk.Label(
-            register_window, text="Rekisteröidy")
+            register_window, text="Rekisteröidy, anna vähintään 4 merkkiä pitkä käyttäjänimi ja salasana")
         register_heading_label.grid(row=0, column=0, columnspan=2)
 
         username_label = ttk.Label(register_window, text="Uusi käyttäjänimi")
@@ -78,7 +78,7 @@ class GUI:
         if add_user(username, password):
             messagebox.showinfo("hyvä", "Rekisteröinti onnistui")
         else:
-            messagebox.showinfo("Voi voi!", "Käyttäjänimi on jo käytössä")
+            messagebox.showinfo("Voi voi!", "Käyttäjänimi on jo käytössä tai se on liian lyhyt")
 
     def open_picture_window(self):
         picture_window = tk.Toplevel(self._root)
