@@ -3,6 +3,7 @@
 ## Retro kokoelma sovellus
 
 [Release viikko 5](https://github.com/LHuldin/ot-harjoitustyo24/releases/tag/viikko5)
+[Release viikko 5.1](https://github.com/LHuldin/ot-harjoitustyo24/releases/tag/Viikko5.1)
 
 
 ### Dokumentaatio
@@ -24,7 +25,13 @@
 poetry install
 ```
 
-2. Sovelluksen käynnistys komennolla:
+2. Asenna sovelluksen SQLite tietokanta komennolla:
+
+```bash
+poetry run invoke build
+```
+
+3. Sovelluksen käynnistys komennolla:
 
 ```bash
 poetry run invoke start
