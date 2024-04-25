@@ -1,11 +1,13 @@
 import tkinter as tk
 from gui import GUI
 
+
 def main():
     root = tk.Tk()
-    app = GUI(root)  
+    app = GUI(root)
     app.start()
-    root.mainloop()  
+    root.mainloop()
+
 
 if __name__ == "__main__":
     main()
