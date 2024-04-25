@@ -78,7 +78,8 @@ class GUI:
         if add_user(username, password):
             messagebox.showinfo("hyvä", "Rekisteröinti onnistui")
         else:
-            messagebox.showinfo("Voi voi!", "Käyttäjänimi on jo käytössä tai se on liian lyhyt")
+            messagebox.showinfo(
+                "Voi voi!", "Käyttäjänimi on jo käytössä tai se on liian lyhyt")
 
     def open_picture_window(self):
         picture_window = tk.Toplevel(self._root)
