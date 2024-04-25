@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import ttk, Canvas, PhotoImage, NW, messagebox
 from user_db_manager import add_user, fetch_user
 from library_db_manager import add_item, fetch_items
-import library_gui
+import ui.library_gui
 
 
 class GUI:
@@ -48,7 +48,7 @@ class GUI:
         if user and user['password'] == password:
             messagebox.showinfo("Hyvä", "kirjautuminen onnistui!")
             self._root.destroy()
-            library_gui.launch_library_gui()
+            ui.library_gui.launch_library_gui()
         else:
             messagebox.showerror("Voi voi!", "Kirjautuminen ei onnistunut.")
 
