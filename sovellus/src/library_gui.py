@@ -4,6 +4,7 @@ import tkinter as tk
 from tkinter import messagebox, simpledialog
 import library_db_manager
 
+
 def launch_library_gui():
     def add_item():
         item_type = entry_type.get()
@@ -17,7 +18,8 @@ def launch_library_gui():
             messagebox.showerror("Error", "All fields are required")
 
     def remove_item():
-        item_id = simpledialog.askstring("Remove Item", "Enter the ID of the item to remove:")
+        item_id = simpledialog.askstring(
+            "Remove Item", "Enter the ID of the item to remove:")
         if item_id:
             library_db_manager.remove_item(item_id)
             messagebox.showinfo("Success", "Item removed successfully")
@@ -29,7 +31,8 @@ def launch_library_gui():
         items = library_db_manager.fetch_items()
         listbox_items.delete(0, tk.END)
         for item in items:
-            listbox_items.insert(tk.END, f'ID: {item[0]}, Tyyppi: {item[1]}, Malli: {item[2]}, Valmistaja: {item[3]}')
+            listbox_items.insert(
+                tk.END, f'ID: {item[0]}, Tyyppi: {item[1]}, Malli: {item[2]}, Valmistaja: {item[3]}')
 
     root = tk.Tk()
     root.title("Library Management")
@@ -57,6 +60,7 @@ def launch_library_gui():
     update_item_list()
 
     root.mainloop()
+
 
 if __name__ == "__main__":
     launch_library_gui()
