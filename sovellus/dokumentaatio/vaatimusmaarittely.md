@@ -13,7 +13,7 @@ Ainakin aluksi vain yksi käyttäjärooli.
 
 - Tekstikäyttöliittymä.   tehty
 
-- Tallennus tiedostoon.
+- Tallennus tiedostoon.   tehty > nyt tallennus tietokantaan
 
 
 ### Kirjautumaton käyttäjä
@@ -26,14 +26,14 @@ Ainakin aluksi vain yksi käyttäjärooli.
 
 - Ohjelma tarjoaa erilaisia valmiiksi luotuja kategorioita ja alakategorioita joihin kokoelman osat jaotellaan.
 
-- Käyttäjä pääsee tarkastelemaan omaa kokoelmaansa ja tekemään siihen lisäyksiä, poistoja ja muita muutoksia valmiiksi luotujen kategorioiden puitteissa.
+- Käyttäjä pääsee tarkastelemaan omaa kokoelmaansa ja tekemään siihen lisäyksiä, poistoja ja muita muutoksia valmiiksi luotujen kategorioiden puitteissa. Tehty
 
  
 ## Mahdolliset myöhemmät toiminnallisuudet
 
-- Graafinen käyttöliittymä, todennäköisesti mukana lähes alusta lähtien.
+- Graafinen käyttöliittymä, todennäköisesti mukana lähes alusta lähtien. Tehty/laajennetaan
 
-- Tiedon tallennus tietokantaan.
+- Tiedon tallennus tietokantaan.    Tehty
 
 - Käyttäjän mahdollisuus lisätä erilaisia kokoelmaan liittyviä kategorioita ja alakategorioita joihin tuotteet voi lajitella.
 
