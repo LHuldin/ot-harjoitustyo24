@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import ttk, Canvas, PhotoImage, NW, messagebox
-from user_db_manager import add_user, fetch_user
-from library_db_manager import add_item, fetch_items
+from repositories.user_db_manager import add_user, fetch_user
+# from repositories.library_db_manager import add_item, fetch_items
 import ui.library_gui
 
 
@@ -10,6 +10,7 @@ class GUI:
         self._root = root
 
     def start(self):
+        self._root.title("Keräily kokoelma")
         heading_label = ttk.Label(master=self._root, text="Kirjaudu")
 
         username_label = ttk.Label(master=self._root, text="Käyttäjänimi")
@@ -91,8 +92,8 @@ class GUI:
         picture_window.mainloop()
 
 
-if __name__ == "__main__":
-    root = tk.Tk()
-    app = GUI(root)
-    app.start()
-    root.mainloop()
+# if __name__ == "__main__":
+#    root = tk.Tk()
+#    app = GUI(root)
+#    app.start()
+#    root.mainloop()

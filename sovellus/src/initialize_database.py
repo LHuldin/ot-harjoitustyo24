@@ -35,6 +35,25 @@ def create_tables(connection):
         );
     ''')
 
+    cursor.execute('''
+        CREATE TABLE hardware (
+            id INTEGER PRIMARY KEY,
+            type TEXT,
+            model TEXT,
+            manufacturer TEXT
+        );
+    ''')
+
+    cursor.execute('''
+        CREATE TABLE software (
+            id INTEGER PRIMARY KEY,
+            system TEXT,
+            type TEXT,
+            model TEXT,
+            manufacturer TEXT
+        );
+    ''')
+
     connection.commit()
 
 
