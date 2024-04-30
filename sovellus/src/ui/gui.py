@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import ttk, Canvas, PhotoImage, NW, messagebox
-from repositories.user_db_manager import add_user, fetch_user
+from repositories.user_db_manager import user_db_manger
 # from repositories.library_db_manager import add_item, fetch_items
 import ui.library_gui
 
@@ -8,6 +8,7 @@ import ui.library_gui
 class GUI:
     def __init__(self, root):
         self._root = root
+        self._userdbmanager = user_db_manger
 
     def start(self):
         self._root.title("Keräily kokoelma")
@@ -45,7 +46,7 @@ class GUI:
     def login(self):
         username = self.username_entry.get()
         password = self.password_entry.get()
-        user = fetch_user(username)
+        user = self._userdbmanager.fetch_user(username)
         if user and user['password'] == password:
             messagebox.showinfo("Hyvä", "kirjautuminen onnistui!")
             self._root.destroy()
@@ -76,7 +77,7 @@ class GUI:
         register_button.grid(row=3, column=0, columnspan=2)
 
     def register(self, username, password):
-        if add_user(username, password):
+        if self._userdbmanager.add_user(username, password):
             messagebox.showinfo("hyvä", "Rekisteröinti onnistui")
         else:
             messagebox.showinfo(
