@@ -1,5 +1,5 @@
 import unittest
-from user_db_manager import *
+from repositories.user_db_manager import *
 
 
 class TestuUser_db_manager(unittest.TestCase):
