@@ -6,6 +6,8 @@
 
 [Release viikko 5.2](https://github.com/LHuldin/ot-harjoitustyo24/releases/tag/Viikko5.2)
 
+[Release viikko 6](https://github.com/LHuldin/ot-harjoitustyo24/releases/tag/Viikko6)
+
 
 ### Dokumentaatio
 
