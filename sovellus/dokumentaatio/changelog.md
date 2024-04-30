@@ -21,3 +21,5 @@
 ## Viikko 6
 - tekstikäyttöliittymän poisto
 - tiedostoon tallennuksen viittausten ja tiedostojen poisto
+- Sovelluksen pilkkominen pienempiin osiin
+- toiminallisuuksien lisäys sovellukseen
