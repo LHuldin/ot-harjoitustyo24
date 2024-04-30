@@ -14,4 +14,6 @@
 | 23.4. | 4    | graafisen käyttöliittymän ja tietokanta yhteyden suunnittelu ja koodaus |
 | 23.4. | 2    | Sovelluksen toiminnan korjaus ja järkeistäminen |
 | 25.4  | 6    | sovelluksen muokkaus käyttämään graafista käyttöliittymää ja SQLite tietokantaa |
-| yht   | 40  | | 
+| 29.4  | 2    | sovelluksen muokkaus käyttämään graafista käyttöliittymää ja SQLite tietokantaa |
+| 30.4  | 8    | erilaisten kategorioiden lisäys ohjelmaan koodin pilkkominen järkevämpään rakenteeseen |
+| yht   | 50  | |  
