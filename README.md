@@ -15,7 +15,7 @@
 
 ### Dokumentaatio
 
-[vaatimusmäärittely](https://github.com/LHuldin/ot-harjoitustyo24/blob/main/sovellus/dokumentaatio/vaatimusmaarittely.md)
+[Vaatimusmäärittely](https://github.com/LHuldin/ot-harjoitustyo24/blob/main/sovellus/dokumentaatio/vaatimusmaarittely.md)
 
 [Tuntikirjanpito](https://github.com/LHuldin/ot-harjoitustyo24/blob/main/sovellus/dokumentaatio/tuntikirjanpito.md)
 
