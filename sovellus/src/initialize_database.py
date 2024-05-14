@@ -12,6 +12,14 @@ def drop_tables(connection):
         DROP TABLE IF EXISTS library;
     ''')
 
+    cursor.execute('''
+        DROP TABLE IF EXISTS hardware;
+    ''')
+
+    cursor.execute('''
+        DROP TABLE IF EXISTS software;
+    ''')
+
     connection.commit()
 
 
@@ -27,30 +35,23 @@ def create_tables(connection):
     ''')
 
     cursor.execute('''
-        CREATE TABLE library (
-            id INTEGER PRIMARY KEY,
-            type TEXT,
-            model TEXT,
-            manufacturer TEXT
-        );
-    ''')
-
-    cursor.execute('''
         CREATE TABLE hardware (
             id INTEGER PRIMARY KEY,
             type TEXT,
             model TEXT,
-            manufacturer TEXT
+            manufacturer TEXT,
+            user_id INTEGER REFERENCES users(id)
         );
     ''')
 
     cursor.execute('''
         CREATE TABLE software (
             id INTEGER PRIMARY KEY,
-            system TEXT,
-            type TEXT,
+            name TEXT,
+            mediatype TEXT,
             model TEXT,
-            manufacturer TEXT
+            manufacturer TEXT,
+            user_id INTEGER REFERENCES users(id)
         );
     ''')
 
