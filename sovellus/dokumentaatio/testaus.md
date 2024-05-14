@@ -12,5 +12,12 @@ Pysyväistallennuksesta vastaavien luokkien Library_db_manager ja User_db_manger
 
 ### Testauskattavuus
 
+Testauksen haaraumakattavuus ilman käyttöliittymä luokkia on 86%
+
+![](./kuvat/testikattavuus.png)
 
 ### Järjestelmä testaus
+
+Järjestelmän testaus on suoritettu manuaalisesti käymällä läpi sovelluksen eri toiminnallisuuksia. 
+Sovellusta on testattu lisäämällä poistamalla tuotteita eri käyttäjinä kirjautuneena.
+Virhetilanteita on pyritty simuloimaan syöttämällä liian lyhyitä arvoja tai jättämällä kenttiä tyhjäksi lomakkeella.
