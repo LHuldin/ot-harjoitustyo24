@@ -5,11 +5,14 @@ from services.user_service import user_service
 
 
 class Library_service:
+    """Ohjelman hardware ja software tietueiden käsittelystä vastaan sovelluslogiikan luokka"""
 
     def __init__(self):
         self._library_db = library_db_manager
 
     def add_hardware(self, item_type, model, manufacturer):
+        """Hoitaa laite tiedon lisäämisen käyttöliittymästä tulleen tiedon avaulla lisäten siihen
+        personoivan käytääjä tiedon"""
         user = user_service.user_now()
         if item_type and model and manufacturer:
             try:
@@ -22,6 +25,8 @@ class Library_service:
             return False
 
     def add_software(self, name, mediatype, model, manufacturer):
+        """Hoitaa ohjelmisto tiedon lisäämisen käyttöliittymästä tulleen tiedon avaulla lisäten siihen
+        personoivan käytääjä tiedon"""
         user = user_service.user_now()
         if name and mediatype and model and manufacturer:
             try:
@@ -35,6 +40,7 @@ class Library_service:
             return False
 
     def remove_hardware(self, item_id):
+        """Tiedon poistosta ID tiedon avulla vastaava funktio"""
         if item_id:
             try:
                 self._library_db.remove_hw(item_id)
@@ -45,6 +51,7 @@ class Library_service:
             return False
 
     def remove_software(self, item_id):
+        """Tiedon poistosta ID tiedon avulla vastaava funktio"""
         if item_id:
             try:
                 self._library_db.remove_sw(item_id)
@@ -55,6 +62,7 @@ class Library_service:
             return False
 
     def fetch_hardware(self):
+        """Hakee tietokannasta käyttäjää vastaavan tiedon siellä olevista laitteista"""
         user = user_service.user_now()
         id = user.user_id
         try:
@@ -64,6 +72,7 @@ class Library_service:
             return False
 
     def fetch_software(self):
+        """Hakee tietokannasta käyttäjää vastaavan tiedon siellä olevista ohjelmistoista"""
         user = user_service.user_now()
         id = user.user_id
         try:

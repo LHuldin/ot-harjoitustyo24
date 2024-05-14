@@ -7,6 +7,7 @@ import tkinter as tk
 
 
 class LibraryGui:
+    """Kirjasto näkymästä vastaava luokka"""
 
     def __init__(self, root, outlogger):
 

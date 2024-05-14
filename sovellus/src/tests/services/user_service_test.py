@@ -13,3 +13,12 @@ class TestUserService(unittest.TestCase):
     def test_register_user(self):
         test_user = user_service.register_user(self.username, self.password)
         self.assertEqual(test_user.username, self.username)
+
+    def test_user_now(self):
+        test_user = user_service.register_user(self.username, self.password)
+        self.assertEqual(user_service.user_now(), test_user)
+
+    def test_logout(self):
+        user_service.register_user(self.username, self.password)
+        user_service.logout()
+        self.assertIsNone(user_service.user_now())

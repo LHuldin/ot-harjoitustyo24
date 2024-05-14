@@ -4,8 +4,20 @@ from services.user_service import user_service
 
 
 class RegisterGui:
+    """Käyttäjän rekisteröitymisestä vastaava näkymä.
+    """
 
     def __init__(self, root, register, login):
+        """Konstruktori, joka luo uuden rekisteröitymisnäkymän.
+
+        Args:
+            root:
+                TKinter-elementti, jonka sisään näkymä alustetaan.
+            login:
+                Kutsuttava-arvo, jota kutsutaan kun käyttäjä luodaan ja siirretään kirjautumissivulle.
+            register:
+                Kutsuttava-arvo, jota kutsutaan kun siirrytään kirjastonäkymään.
+        """
 
         self._root = root
         self._username_entry = None
@@ -27,7 +39,7 @@ class RegisterGui:
         password = self._password_entry.get()
 
         if len(username) == 0 or len(password) == 0:
-            self._show_error("Username and password is required")
+            messagebox.showerror("Error", "Sekä käyttäjänimi että salasana tarvitaan")
             return
 
         try:
@@ -35,8 +47,8 @@ class RegisterGui:
 
             self._login()
             # self._register()
-        except UsernameExistsError:
-            self._show_error(f"Username {username} already exists")
+        except:
+            messagebox.showerror("Error", "Lisäys tietokantaan ei onnistunut")
 
     def _start(self):
 

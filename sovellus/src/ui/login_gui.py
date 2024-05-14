@@ -1,8 +1,9 @@
-from tkinter import ttk, constants
+from tkinter import ttk, constants, messagebox
 from services.user_service import user_service
 
 
 class LoginGui:
+    """Luokka joka vastaa käyttäjän kirjautumisen käyttöliittymä näkymästä. """
 
     def __init__(self, root, login, register, outlogger):
 
@@ -26,6 +27,7 @@ class LoginGui:
             self._loggedin()
             
         except:
+            messagebox.showerror("Error", "Kirjautuminen ei onnistunut")
             self._outlogger()
 
     def pack(self):

@@ -20,3 +20,25 @@ class TestLibraryService(unittest.TestCase):
         value = library_service.add_software(
             "Mario", "moduli", "nes", "nintendo")
         self.assertEqual(value, True)
+
+    def test_fetch_hardware(self):
+        library_service.add_hardware("laptop", "t420", "Lenovo")
+        library_service.add_hardware("laptop", "t450", "Lenovo")
+        items = library_service.fetch_hardware()
+        self.assertEqual(len(items), 2)
+
+    def test_remove_hardware(self):
+        library_service.add_hardware("laptop", "t420", "Lenovo")
+        library_service.add_hardware("laptop", "t450", "Lenovo")
+        library_service.remove_hardware("1")
+        items = library_service.fetch_hardware()
+        self.assertEqual(len(items), 1)
+
+    def test_remove_software(self):
+        library_service.add_software("Mario", "moduli", "nes", "nintendo")
+        library_service.add_software("zelda2", "moduli", "nes", "nintendo")
+        library_service.add_software("mgs1", "CD", "PS1", "Konami")
+        library_service.remove_software("1")
+        items = library_service.fetch_software()
+        self.assertEqual(len(items), 2)
+
