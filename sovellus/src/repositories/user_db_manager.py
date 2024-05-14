@@ -42,7 +42,6 @@ class UserDBManager:
         row = cursor.fetchone()
         return User(row["id"], row["username"], row["password"]) if row else None
 
-    
     def delete_all(self):
         """Poistaa kaiken käyttäjätiedon tietokannasta 
         """

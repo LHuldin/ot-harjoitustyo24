@@ -76,7 +76,7 @@ class Library_db_manager:
 
     def remove_hw(self, item_id):
         """Poistaa tietokannasta yhden hardware tietueen id tiedon perusteella
-        
+
         Args:
             item_id: tietueen tetokannassa oleva id numero 
         """
@@ -86,7 +86,7 @@ class Library_db_manager:
 
     def remove_sw(self, item_id):
         """Poistaa tietokannasta yhden software tietueen id tiedon perusteella
-        
+
         Args:
             item_id: tietueen tetokannassa oleva id numero 
         """

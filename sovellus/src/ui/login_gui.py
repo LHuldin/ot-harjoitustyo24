@@ -23,9 +23,9 @@ class LoginGui:
 
         try:
             user_service.login(username, password)
-            
+
             self._loggedin()
-            
+
         except:
             messagebox.showerror("Error", "Kirjautuminen ei onnistunut")
             self._outlogger()

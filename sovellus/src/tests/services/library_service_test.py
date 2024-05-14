@@ -41,4 +41,3 @@ class TestLibraryService(unittest.TestCase):
         library_service.remove_software("1")
         items = library_service.fetch_software()
         self.assertEqual(len(items), 2)
-

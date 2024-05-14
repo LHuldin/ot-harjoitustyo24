@@ -51,12 +51,13 @@ class LibraryGui:
         self._sw_listbox.grid(row=3, column=0, columnspan=2)
         self.update_hardware_list()
         self.update_software_list()
-        remove_hwbutton = tk.Button(self._frame, text="Poista Laite", command=self.remove_hardware)
+        remove_hwbutton = tk.Button(
+            self._frame, text="Poista Laite", command=self.remove_hardware)
         remove_hwbutton.grid(row=4, column=0)
-        remove_swbutton = tk.Button(self._frame, text="Poista Peli", command=self.remove_software)
+        remove_swbutton = tk.Button(
+            self._frame, text="Poista Peli", command=self.remove_software)
         remove_swbutton.grid(row=4, column=1)
-        
-        
+
         ttk.Button(self._frame, text="Kirjaudu ulos",
                    command=self._outlogger).grid(row=5, column=2)
 
@@ -139,7 +140,7 @@ class LibraryGui:
         else:
             messagebox.showerror(
                 "Error", "tällä ID numerolla ei löydy laitetta")
-            
+
     def remove_software(self):
         item_id = simpledialog.askstring(
             "Poista tuote", "Anna pelin ID poistaaksesi sen:")
@@ -150,7 +151,6 @@ class LibraryGui:
         else:
             messagebox.showerror(
                 "Error", "tällä ID numerolla ei löydy peliä")
-
 
     def update_hardware_list(self):
         items = library_service.fetch_hardware()

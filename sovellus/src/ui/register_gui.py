@@ -39,7 +39,8 @@ class RegisterGui:
         password = self._password_entry.get()
 
         if len(username) == 0 or len(password) == 0:
-            messagebox.showerror("Error", "Sekä käyttäjänimi että salasana tarvitaan")
+            messagebox.showerror(
+                "Error", "Sekä käyttäjänimi että salasana tarvitaan")
             return
 
         try:

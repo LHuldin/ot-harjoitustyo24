@@ -80,9 +80,6 @@ class Library_service:
             return items
         except:
             return False
-        
-    
 
 
 library_service = Library_service()
-
