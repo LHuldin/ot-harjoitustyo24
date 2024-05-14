@@ -24,7 +24,32 @@ poetry run invoke start
 
 
 ## Kirjautuminen ja rekisteröityminen
+kirjautumisnäkymä josta pääsee reksteröitymään:
 
-![](sovellus/dokumentaatio/kuvat/Näyttökuva 2024-05-14 kello 18.05.23 kopio.png)
+![](./kuvat/login.png)
 
-## Tuotteiden lisäys ja poisto
+rekisteröitymisnäkymä jossa voit luoda uuden käyttäjän antamalla vähintään 4 merkkiä pitkän käyttäjänimen ja salasanan:
+
+![](./kuvat/register.png)
+
+Rekisteröinnin jälkeen palaat vielä kirjautumis näkymään jossa voit kirjautua sisään
+
+## Kirjasto ja tuotteiden lisäys ja poisto
+
+Kirjasto näkymä jossa voit lisätä ja poistaa tuotteita.
+Täällä myös näet listattuna laitteet pelit jotka ovat tietokannassa:
+![](./kuvat/kirjasto.png)
+
+Laitteen ja pelien lisäämisen mahdollistavat näkymät:
+![](./kuvat/lisaalaite.png)
+![](./kuvat/lisaapeli.png)
+
+Ja viimeisenä näkymä jossa on ID numeron perusteella mahdollista poistaa tuote tietokannasta:
+
+![](./kuvat/poistatuote.png)
+
+
+
+
+
+
