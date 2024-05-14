@@ -2,7 +2,6 @@ import unittest
 from repositories.user_db_manager import user_db_manager
 
 
-
 class TestuUserDBManager(unittest.TestCase):
     def setUp(self):
         print("Set up goes here")
