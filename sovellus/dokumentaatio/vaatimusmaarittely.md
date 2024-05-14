@@ -7,11 +7,11 @@ Sovelluksen avulla on mahdollista ylläpitää omaa tietokone/konsoli/pelikokoel
 
 ## Käyttäjät
 
-Ainakin aluksi vain yksi käyttäjärooli. 
+Ainakin aluksi vain yksi käyttäjärooli. > Vain peruskäyttäjä rooli toteutettu
 
 ## Perusversion toiminnallisuus
 
-- Tekstikäyttöliittymä.   tehty
+- Tekstikäyttöliittymä.   tehty > graafinen tkinter käyttöliittymä
 
 - Tallennus tiedostoon.   tehty > nyt tallennus tietokantaan
 
@@ -24,7 +24,7 @@ Ainakin aluksi vain yksi käyttäjärooli.
 
 ### Kirjautumisen jälkeen
 
-- Ohjelma tarjoaa erilaisia valmiiksi luotuja kategorioita ja alakategorioita joihin kokoelman osat jaotellaan.
+- Ohjelma tarjoaa erilaisia valmiiksi luotuja kategorioita ja alakategorioita joihin kokoelman osat jaotellaan. > 2 kategoriaa johon tuotteita voi tallentaa ja poistaa
 
 - Käyttäjä pääsee tarkastelemaan omaa kokoelmaansa ja tekemään siihen lisäyksiä, poistoja ja muita muutoksia valmiiksi luotujen kategorioiden puitteissa. Tehty
 
@@ -35,9 +35,9 @@ Ainakin aluksi vain yksi käyttäjärooli.
 
 - Tiedon tallennus tietokantaan.    Tehty
 
-- Käyttäjän mahdollisuus lisätä erilaisia kokoelmaan liittyviä kategorioita ja alakategorioita joihin tuotteet voi lajitella.
+- Käyttäjän mahdollisuus lisätä erilaisia kokoelmaan liittyviä kategorioita ja alakategorioita joihin tuotteet voi lajitella. > Ei toteutettu
 
-- Kuvien lisäämisen mahdollisuus.
+- Kuvien lisäämisen mahdollisuus. > Ei toteutettu
 
 
 
