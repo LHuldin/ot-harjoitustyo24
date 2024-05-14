@@ -21,7 +21,7 @@
 
 [Changelog](https://github.com/LHuldin/ot-harjoitustyo24/blob/main/sovellus/dokumentaatio/changelog.md)
 
-[arkkitehtuurikuvaus](https://github.com/LHuldin/ot-harjoitustyo24/blob/main/sovellus/dokumentaatio/arkkitehtuuri.md)
+[Arkkitehtuurikuvaus](https://github.com/LHuldin/ot-harjoitustyo24/blob/main/sovellus/dokumentaatio/arkkitehtuuri.md)
 
 [Käyttöohje](https://github.com/LHuldin/ot-harjoitustyo24/blob/main/sovellus/dokumentaatio/kayttoohje.md)
 
