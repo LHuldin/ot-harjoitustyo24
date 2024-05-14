@@ -30,7 +30,9 @@ kirjautumisnäkymä josta pääsee reksteröitymään:
 
 rekisteröitymisnäkymä jossa voit luoda uuden käyttäjän antamalla vähintään 4 merkkiä pitkän käyttäjänimen ja salasanan:
 
+
 ![](./kuvat/register.png)
+
 
 Rekisteröinnin jälkeen palaat vielä kirjautumisnäkymään, jossa voit kirjautua sisään.
 
@@ -38,13 +40,20 @@ Rekisteröinnin jälkeen palaat vielä kirjautumisnäkymään, jossa voit kirjau
 
 Kirjasto näkymä jossa voit lisätä ja poistaa tuotteita.
 Täällä myös näet listattuna laitteet pelit jotka ovat tietokannassa sinun tunnuksellasi tallennettuna:
+
+
 ![](./kuvat/kirjasto.png)
 
+
 Laitteen ja pelien lisäämisen mahdollistavat näkymät, täytä kaikki kentät:
+
+
 ![](./kuvat/lisaalaite.png)
 ![](./kuvat/lisaapeli.png)
 
+
 Ja viimeisenä näkymä jossa on ID numeron perusteella mahdollista poistaa tuote tietokannasta:
+
 
 ![](./kuvat/poistatuote.png)
 
