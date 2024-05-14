@@ -9,10 +9,6 @@ def drop_tables(connection):
     ''')
 
     cursor.execute('''
-        DROP TABLE IF EXISTS library;
-    ''')
-
-    cursor.execute('''
         DROP TABLE IF EXISTS hardware;
     ''')
 

@@ -1,7 +1,6 @@
 from ui.login_gui import LoginGui
 from ui.register_gui import RegisterGui
 from ui.library_gui import LibraryGui
-from ui.add_hw_gui import AddHWGui
 
 
 class UI:
@@ -34,12 +33,5 @@ class UI:
 
     def _library(self):
         self._destroy_view()
-        print("nyt melkein kirjastossa")
         self._current_view = LibraryGui(self._root, self._login)
         self._current_view.pack()
-
-    def _add_hw(self):
-        pass
-
-    def _add_sw(self):
-        pass

@@ -1,7 +1,7 @@
 class Hardware:
-    def __init__(self, type, model, manufacturer, user_id):
+    def __init__(self, hwtype, model, manufacturer, user_id):
 
-        self.type = type
+        self.type = hwtype
         self.model = model
         self.manufacturer = manufacturer
         self.user_id = user_id

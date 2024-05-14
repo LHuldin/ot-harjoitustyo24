@@ -33,7 +33,8 @@ class RegisterGui:
         try:
             user_service.register_user(username, password)
 
-            self._register()
+            self._login()
+            # self._register()
         except UsernameExistsError:
             self._show_error(f"Username {username} already exists")
 
@@ -50,9 +51,6 @@ class RegisterGui:
         password_label = ttk.Label(master=self._frame, text="Uusi salasana")
         self._password_entry = ttk.Entry(master=self._frame)
 
-        # register_window = tk.Toplevel(self._root)
-        # register_window.title("Rekisteröidy")
-
         heading_label.grid(row=0, column=0, columnspan=2)
 
         username_label.grid(row=1, column=0)
@@ -63,5 +61,4 @@ class RegisterGui:
 
         register_button = ttk.Button(
             master=self._frame, text="Rekisteröidy", command=self._add_user)  # (
-        # self._username_entry.get(), self._password_entry.get()))
         register_button.grid(row=3, column=0, columnspan=2)

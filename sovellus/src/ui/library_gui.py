@@ -40,9 +40,9 @@ class LibraryGui:
         heading_label = ttk.Label(
             master=self._frame, text="Tervetuloa kirjastoon")
         heading_label.grid(row=0, column=0, columnspan=2)
-        ttk.Button(self._frame, text="Lisää Hardware",
+        ttk.Button(self._frame, text="Lisää Laite",
                    command=self._open_add_hardware_window).grid(row=1, column=0)
-        ttk.Button(self._frame, text="Lisää Software",
+        ttk.Button(self._frame, text="Lisää Peli",
                    command=self._open_add_software_window).grid(row=1, column=1)
         self._hw_listbox = tk.Listbox(self._frame, height=10, width=50)
         self._hw_listbox.grid(row=2, column=0, columnspan=2)
@@ -50,43 +50,30 @@ class LibraryGui:
         self._sw_listbox.grid(row=3, column=0, columnspan=2)
         self.update_hardware_list()
         self.update_software_list()
+        remove_hwbutton = tk.Button(self._frame, text="Poista Laite", command=self.remove_hardware)
+        remove_hwbutton.grid(row=4, column=0)
+        remove_swbutton = tk.Button(self._frame, text="Poista Peli", command=self.remove_software)
+        remove_swbutton.grid(row=4, column=1)
+        
+        
         ttk.Button(self._frame, text="Kirjaudu ulos",
-                   command=self._outlogger).grid(row=4, column=2)
-
-        # self._frame = ttk.Frame(master=self._root)
-        # heading_label = ttk.Label(master=self._frame, text="Tervetuloa kirjastoon")
-        # heading_label.grid(row=0, column=0, columnspan=2)
-
-        # hwbutton = ttk.Button(self._frame, text="Lisää Hardware", command=self._open_add_hardware_window).grid(row=1, column=0)
-
-        # Nappi avaa 'Add Software' ikkunan
-        # swbutton = ttk.Button(self._frame, text="Lisää Software", command=self._open_add_software_window).grid(row=1, column=1)
-
-        # Listboxit esittelemään olemassa olevat tietueet
-        # self._hw_listbox = tk.Listbox(self._frame, height=5)
-        # self._hw_listbox.grid(row=2, column=0, columnspan=2)
-
-        # self._sw_listbox = tk.Listbox(self._frame, height=5)
-        # self._sw_listbox.grid(row=3, column=0, columnspan=2)
-
-        # self.update_hardware_list()
-        # self.update_software_list()
+                   command=self._outlogger).grid(row=5, column=2)
 
     def _open_add_hardware_window(self):
         self._add_window = tk.Toplevel(self._root)
-        self._add_window.title("Lisää Hardware")
+        self._add_window.title("Lisää Laite")
 
-        ttk.Label(self._add_window, text="Hardware Tyyppi:").grid(
+        ttk.Label(self._add_window, text="Laite Tyyppi:").grid(
             row=0, column=0)
         hw_type_entry = tk.Entry(self._add_window)
         hw_type_entry.grid(row=0, column=1)
 
-        ttk.Label(self._add_window, text="Hardware Malli:").grid(
+        ttk.Label(self._add_window, text="Laite Malli:").grid(
             row=1, column=0)
         hw_model_entry = tk.Entry(self._add_window)
         hw_model_entry.grid(row=1, column=1)
 
-        ttk.Label(self._add_window, text="Hardware Valmistaja:").grid(
+        ttk.Label(self._add_window, text="Laite Valmistaja:").grid(
             row=2, column=0)
         hw_manufacturer_entry = tk.Entry(self._add_window)
         hw_manufacturer_entry.grid(row=2, column=1)
@@ -96,24 +83,24 @@ class LibraryGui:
 
     def _open_add_software_window(self):
         self._add_window = tk.Toplevel(self._root)
-        self._add_window.title("Lisää Software")
+        self._add_window.title("Lisää Peli")
 
-        ttk.Label(self._add_window, text="Software Järjestelmä:").grid(
+        ttk.Label(self._add_window, text="Pelin Järjestelmä:").grid(
             row=0, column=0)
         sw_system_entry = tk.Entry(self._add_window)
         sw_system_entry.grid(row=0, column=1)
 
-        ttk.Label(self._add_window, text="Software Mediatyyppi:").grid(
+        ttk.Label(self._add_window, text="Pelin Mediatyyppi:").grid(
             row=1, column=0)
         sw_mediatype_entry = tk.Entry(self._add_window)
         sw_mediatype_entry.grid(row=1, column=1)
 
-        ttk.Label(self._add_window, text="Software Malli:").grid(
+        ttk.Label(self._add_window, text="Pelin Malli:").grid(
             row=2, column=0)
         sw_model_entry = tk.Entry(self._add_window)
         sw_model_entry.grid(row=2, column=1)
 
-        ttk.Label(self._add_window, text="Software Valmistaja:").grid(
+        ttk.Label(self._add_window, text="Pelin Valmistaja:").grid(
             row=3, column=0)
         sw_manufacturer_entry = tk.Entry(self._add_window)
         sw_manufacturer_entry.grid(row=3, column=1)
@@ -124,22 +111,45 @@ class LibraryGui:
     def add_hardware(self, item_type, model, manufacturer):
         if item_type and model and manufacturer:
             library_service.add_hardware(item_type, model, manufacturer)
-            messagebox.showinfo("Success", "Hardware added successfully")
+            messagebox.showinfo("Success", "Laite lisätty")
             self.update_hardware_list()
             self._add_window.destroy()
         else:
-            messagebox.showerror("Error", "Please fill all fields")
+            messagebox.showerror("Error", "Täytä kaikki kentät")
 
     def add_software(self, name, mediatype, model, manufacturer):
         if name and mediatype and model and manufacturer:
             print(name)
             print(mediatype)
             library_service.add_software(name, mediatype, model, manufacturer)
-            messagebox.showinfo("Success", "Software added successfully")
+            messagebox.showinfo("Success", "Peli lisätty")
             self.update_software_list()
             self._add_window.destroy()
         else:
-            messagebox.show
+            messagebox.showerror("Virhe", "Täytä kaikki kentät")
+
+    def remove_hardware(self):
+        item_id = simpledialog.askstring(
+            "Poista tuote", "Anna laitteen ID poistaaksesi sen:")
+        if item_id:
+            library_service.remove_hardware(item_id)
+            messagebox.showinfo("Success", "Laite poistettu")
+            self.update_hardware_list()
+        else:
+            messagebox.showerror(
+                "Error", "tällä ID numerolla ei löydy laitetta")
+            
+    def remove_software(self):
+        item_id = simpledialog.askstring(
+            "Poista tuote", "Anna pelin ID poistaaksesi sen:")
+        if item_id:
+            library_service.remove_software(item_id)
+            messagebox.showinfo("Success", "Peli poistettu")
+            self.update_software_list()
+        else:
+            messagebox.showerror(
+                "Error", "tällä ID numerolla ei löydy peliä")
+
 
     def update_hardware_list(self):
         items = library_service.fetch_hardware()

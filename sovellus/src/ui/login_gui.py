@@ -22,11 +22,10 @@ class LoginGui:
 
         try:
             user_service.login(username, password)
-            print("Tänne päästy1111")
+            
             self._loggedin()
-            print("Tänne päästy2222")
+            
         except:
-            print("VIRHE PERKELE")
             self._outlogger()
 
     def pack(self):
@@ -57,16 +56,23 @@ class LoginGui:
             command=self._register
         )
 
-        heading_label.grid(row=0, column=0, columnspan=2)
+        heading_label.grid(row=0, column=1, sticky=(
+            constants.W, constants.E))  # columnspan=2)
 
-        username_label.grid(row=1, column=0)
-        self._username_entry.grid(row=1, column=1)
+        username_label.grid(row=1, column=0, sticky=(constants.W, constants.E))
+        self._username_entry.grid(
+            row=1, column=1, sticky=(constants.W, constants.E))  # )
 
-        password_label.grid(row=2, column=0)
-        self._password_entry.grid(row=2, column=1)
+        password_label.grid(row=2, column=0, sticky=(
+            constants.W, constants.E))  # )
+        self._password_entry.grid(
+            row=2, column=1, sticky=(constants.W, constants.E))  # )
 
-        login_button.grid(row=3, column=0, columnspan=2)
+        login_button.grid(row=3, column=1, sticky=(
+            constants.W, constants.E))  # , columnspan=2)
 
-        register_button.grid(row=4, column=0, columnspan=2)
+        register_button.grid(row=4, column=1, sticky=(
+            constants.W, constants.E))  # , columnspan=2)
 
         self._frame.grid_columnconfigure(1, weight=1)
+# sticky=(constants.W, constants.E) #
