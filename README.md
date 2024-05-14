@@ -10,7 +10,7 @@
 
 [Release viikko 6](https://github.com/LHuldin/ot-harjoitustyo24/releases/tag/Viikko6)
 
-[Final Release](https://github.com/LHuldin/ot-harjoitustyo24/releases/tag/FinalRelease1.1)
+[Loppupalautus](https://github.com/LHuldin/ot-harjoitustyo24/releases/tag/FinalRelease1.1)
 
 
 ### Dokumentaatio
