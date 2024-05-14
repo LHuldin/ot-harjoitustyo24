@@ -26,4 +26,6 @@
 
 ## Loppupalautus
 - tietokannan käytön järkeistäminen
+- Koko ohjelman rakenteen muokkaaminen järkevämmäksi
+- Koodin jakaminen järkevämmiksi kokonaisuuksiksi
 
