@@ -25,5 +25,6 @@ poetry run invoke start
 
 ## Kirjautuminen ja rekisteröityminen
 
+![](sovellus/dokumentaatio/kuvat/Näyttökuva 2024-05-14 kello 18.05.23 kopio.png)
 
 ## Tuotteiden lisäys ja poisto
