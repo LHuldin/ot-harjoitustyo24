@@ -18,5 +18,6 @@
 | 30.4  | 8    | erilaisten kategorioiden lisäys ohjelmaan koodin pilkkominen järkevämpään rakenteeseen |
 | 12.5  | 5    | ohjelman uudelleen jäsentäminen|
 | 13.5  | 8    | ohjelman uudelleen jäsentäminen ja koodin siistiminen |
-| 13.5  | 10    | ohjelman uudelleen jäsentäminen ja koodin siistiminen ja uusien testien lisääminen |
-| yht   | 73  | |  
+| 14.5  | 9    | ohjelman uudelleen jäsentäminen ja koodin siistiminen ja uusien testien lisääminen |
+| 14.5  | 2    | docstring lisätty|
+| yht   | 74  | |  
