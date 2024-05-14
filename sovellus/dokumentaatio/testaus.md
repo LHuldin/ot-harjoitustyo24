@@ -16,6 +16,8 @@ Testauksen haaraumakattavuus ilman käyttöliittymä luokkia on 86%
 
 ![](./kuvat/testikattavuus.png)
 
+Testejä ajettaessa luodaan niitä varten erillinen test-database.sqlite tietokanta.
+
 ### Järjestelmä testaus
 
 Järjestelmän testaus on suoritettu manuaalisesti käymällä läpi sovelluksen eri toiminnallisuuksia. 
