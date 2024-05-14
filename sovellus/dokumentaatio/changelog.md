@@ -23,3 +23,7 @@
 - tiedostoon tallennuksen viittausten ja tiedostojen poisto
 - Sovelluksen pilkkominen pienempiin osiin
 - toiminallisuuksien lisäys sovellukseen
+
+## Loppupalautus
+- tietokannan käytön järkeistäminen
+
