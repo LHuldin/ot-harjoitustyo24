@@ -32,15 +32,15 @@ rekisteröitymisnäkymä jossa voit luoda uuden käyttäjän antamalla vähintä
 
 ![](./kuvat/register.png)
 
-Rekisteröinnin jälkeen palaat vielä kirjautumis näkymään jossa voit kirjautua sisään
+Rekisteröinnin jälkeen palaat vielä kirjautumisnäkymään, jossa voit kirjautua sisään.
 
 ## Kirjasto ja tuotteiden lisäys ja poisto
 
 Kirjasto näkymä jossa voit lisätä ja poistaa tuotteita.
-Täällä myös näet listattuna laitteet pelit jotka ovat tietokannassa:
+Täällä myös näet listattuna laitteet pelit jotka ovat tietokannassa sinun tunnuksellasi tallennettuna:
 ![](./kuvat/kirjasto.png)
 
-Laitteen ja pelien lisäämisen mahdollistavat näkymät:
+Laitteen ja pelien lisäämisen mahdollistavat näkymät, täytä kaikki kentät:
 ![](./kuvat/lisaalaite.png)
 ![](./kuvat/lisaapeli.png)
 
